@@ -9,7 +9,7 @@ import presentacion.Modelo;
 
 /**
  *
- * @author Brayan
+ * @author Cheetos, Calec y Alejandro
  */
 public class Launcher {
     private Modelo modelo;

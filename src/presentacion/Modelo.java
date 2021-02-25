@@ -15,7 +15,7 @@ import org.jfree.data.category.DefaultCategoryDataset;
 
 /**
  *
- * @author Brayan
+ * @author Cheetos, Calec y Alejandro
  */
 public class Modelo {
     private Vista vista;

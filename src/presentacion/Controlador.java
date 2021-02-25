@@ -10,7 +10,7 @@ import java.awt.event.MouseListener;
 
 /**
  *
- * @author Brayan
+ * @author Cheetos, Calec y Alejandro
  */
 public class Controlador implements MouseListener {
     private final Vista vista;

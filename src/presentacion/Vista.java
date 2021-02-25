@@ -20,7 +20,7 @@ import org.jfree.data.xy.XYDataset;
 
 /**
  *
- * @author Brayan
+ * @author Cheetos, Calec y Alejandro
  */
 public class Vista extends javax.swing.JFrame {
 

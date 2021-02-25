@@ -12,7 +12,7 @@ import javax.swing.JFileChooser;
 
 /**
  *
- * @author Brayan
+ * @author Cheetos, Calec y Alejandro
  */
 public class Sistema {
     private ArrayList<Integer> lista;
