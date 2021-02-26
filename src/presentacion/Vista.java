@@ -173,7 +173,7 @@ public class Vista extends javax.swing.JFrame {
         lblModa.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         lblModa.setText("0");
 
-        jButtonCalcular.setBackground(new java.awt.Color(102, 102, 0));
+        jButtonCalcular.setBackground(new java.awt.Color(102, 153, 255));
         jButtonCalcular.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
         jButtonCalcular.setText("CALCULAR");
 
