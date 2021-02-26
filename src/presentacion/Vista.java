@@ -6,9 +6,11 @@
 package presentacion;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import static java.lang.Double.parseDouble;
 import static java.lang.Integer.parseInt;
 import java.util.ArrayList;
+import java.util.HashSet;
 import javax.swing.JOptionPane;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
@@ -42,7 +44,7 @@ public class Vista extends javax.swing.JFrame {
 
     public void crearGrafica() {
         Function2D normal = new NormalDistributionFunction2D(media, this.getModelo().getLogica().calcularDesviacion());
-        XYDataset dataset = DatasetUtilities.sampleFunction2D(normal, media - 5.0, media + 5.0, 30, "Normal");
+        XYDataset dataset = DatasetUtilities.sampleFunction2D(normal, media - 5.0, media + 5.0, 100, "Normal");
         final JFreeChart chart = ChartFactory.createXYLineChart(
                 "",
                 "Valores",
@@ -50,14 +52,16 @@ public class Vista extends javax.swing.JFrame {
                 dataset,
                 PlotOrientation.VERTICAL,
                 false,
-                false,
+                true,
                 false
         );
-
+        chart.setBackgroundPaint(new Color(0, 191, 255));
+        chart.setBorderVisible(true);
+        chart.setBorderPaint(Color.BLUE);
         final ChartPanel chartPanel = new ChartPanel(chart);
         chartPanel.setPreferredSize(new java.awt.Dimension(500, 270));
         chartPanel.setLocation(200, 200);
-
+        
         panelGrafica.setLayout(new java.awt.BorderLayout());
         panelGrafica.add(chartPanel, BorderLayout.CENTER);
         panelGrafica.validate();
