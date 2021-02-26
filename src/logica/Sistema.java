@@ -18,7 +18,7 @@ public class Sistema {
     private ArrayList<Integer> lista;
     public Sistema() {
         lista = new ArrayList<Integer>();
-        llenarLista();
+        //llenarLista();
     }
     
     /**
