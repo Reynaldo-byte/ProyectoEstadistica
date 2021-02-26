@@ -13,15 +13,15 @@ import presentacion.Modelo;
  *
  * @author Cheetos, Calec y Alejandro
  */
-public class Launcher {
+public class Main {
     private Modelo modelo;
-    public Launcher() {
+    public Main() {
         modelo = new Modelo();
         modelo.iniciar();
     }
 
     public static void main(String[] args) {
-       new Launcher();
+       new Main();
     }
     
 }
