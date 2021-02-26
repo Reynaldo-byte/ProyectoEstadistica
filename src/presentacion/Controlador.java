@@ -23,7 +23,7 @@ public class Controlador implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        if (vista.getModelo().getSistema().getLista().isEmpty()) {
+        if (vista.getModelo().getLogica().getLista().isEmpty()) {
             JOptionPane.showMessageDialog(null, "No hay datos en la Muestra");
         } else {
             vista.getModelo().enviarMedia();

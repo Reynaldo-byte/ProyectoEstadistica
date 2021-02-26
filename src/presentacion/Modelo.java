@@ -5,13 +5,7 @@
  */
 package presentacion;
 
-import javax.swing.JFrame;
-import logica.Sistema;
-import org.jfree.chart.ChartFactory;
-import org.jfree.chart.ChartPanel;
-import org.jfree.chart.JFreeChart;
-import org.jfree.chart.plot.PlotOrientation;
-import org.jfree.data.category.DefaultCategoryDataset;
+import logica.Logica;
 
 /**
  *
@@ -19,7 +13,7 @@ import org.jfree.data.category.DefaultCategoryDataset;
  */
 public class Modelo {
     private Vista vista;
-    private Sistema sistema;
+    private Logica sistema;
 
     public Modelo() {
 
@@ -28,7 +22,7 @@ public class Modelo {
     public void iniciar(){
 
         getVentana().setVisible(true);
-        getVentana().llenarMuestra(getSistema().getLista());
+        getVentana().llenarMuestra(getLogica().getLista());
     }
     
     public Vista getVentana() {
@@ -38,32 +32,32 @@ public class Modelo {
         return vista;
     }
     
-    public Sistema getSistema(){
+    public Logica getLogica(){
         if(sistema==null){
-            sistema = new Sistema();
+            sistema = new Logica();
         }
         return sistema;
     }
     
     public void enviarMedia(){
-       getVentana().cambiarMedia(getSistema().calcularMedia());
+       getVentana().cambiarMedia(getLogica().calcularMedia());
     }
     
     public void enviarMediana(){
-       getVentana().cambiarMediana(getSistema().calcularMediana());
+       getVentana().cambiarMediana(getLogica().calcularMediana());
      
     }
     
     public void enviarModa(){
-       getVentana().cambiarModa(getSistema().calcularModa());
+       getVentana().cambiarModa(getLogica().calcularModa());
     }
     
     public void enviarVarianza(){
-        getVentana().cambiarVarianza(getSistema().calcularVarianza());
+        getVentana().cambiarVarianza(getLogica().calcularVarianza());
     }
     
     public void enviarDesviacion(){
-        getVentana().cambiarDesviacion(getSistema().calcularDesviacion());
+        getVentana().cambiarDesviacion(getLogica().calcularDesviacion());
     }
     
 }

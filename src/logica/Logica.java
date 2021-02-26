@@ -14,9 +14,9 @@ import javax.swing.JFileChooser;
  *
  * @author Cheetos, Calec y Alejandro
  */
-public class Sistema {
+public class Logica {
     private ArrayList<Integer> lista;
-    public Sistema() {
+    public Logica() {
         lista = new ArrayList<Integer>();
         //llenarLista();
     }

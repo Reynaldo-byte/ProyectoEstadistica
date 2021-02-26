@@ -401,7 +401,7 @@ public class Vista extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if (!"".equals(jTextField1.getText())) {
             listMuestra.add(jTextField1.getText());
-            this.getModelo().getSistema().agregarALista(jTextField1.getText());
+            this.getModelo().getLogica().agregarALista(jTextField1.getText());
             jTextField1.setText("");
         } else {
             JOptionPane.showMessageDialog(null, "Por favor ingresa un valor.");
@@ -409,14 +409,14 @@ public class Vista extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        this.getModelo().getSistema().reiniciarLista();
+        this.getModelo().getLogica().reiniciarLista();
         listMuestra.removeAll();
         JOptionPane.showMessageDialog(null, "Muestra reiniciada.");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        this.getModelo().getSistema().llenarLista();
-        llenarMuestra(this.getModelo().getSistema().getLista());
+        this.getModelo().getLogica().llenarLista();
+        llenarMuestra(this.getModelo().getLogica().getLista());
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
