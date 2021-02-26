@@ -49,6 +49,10 @@ public class Sistema {
     
    }
     
+    public void agregarALista(String dato){
+        lista.add(parseInt(dato));
+    }
+    
     
     public double calcularMedia(){
         double suma=0;
@@ -111,6 +115,8 @@ public class Sistema {
         valor = Math.sqrt(calcularVarianza());
         return valor;
     }
-    
-    
+
+    public void reiniciarLista() {
+        lista = new ArrayList<Integer>();
+    }
 }
